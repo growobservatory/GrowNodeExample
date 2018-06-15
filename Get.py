@@ -15,7 +15,7 @@ import sys
 try:
     api_key = sys.argv[1]
 except:
-    sys.exit("The API key must be passed passed as argument when executing the script. Please run 'python Get.py <your-api-key>'.")
+    sys.exit("The API key must be passed as argument when executing the script. Please run 'python Get.py <your-api-key>'.")
 
 url = "https://grow.thingful.net/api/entity/locations/get"
 headers = {"Authorization": "Bearer {0}".format(api_key)}
