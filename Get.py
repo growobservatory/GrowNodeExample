@@ -11,7 +11,7 @@ import requests
 import json
 import sys
 
-# ensure the has been passed as argument
+# ensure the key has been passed as argument
 try:
     api_key = sys.argv[1]
 except:
