@@ -38,8 +38,13 @@ pip install <package-name>
 
 Finally run the script with
 ```
-python Get.py
+python Get.py <your-api-key>
 ```
+
+## Obtaining API Keys
+Users must be authenticated using their [API key](https://en.wikipedia.org/wiki/Application_programming_interface_key) when interacting with the GROW Node.
+In order to obtain a key please contact
+- dev@thingful.net 
 
 ## Documentation for GROW node
 https://growobservatory.github.io/ThingfulNode/#tag/Locations
