@@ -23,7 +23,11 @@ payload = json.dumps({'DataSourceCodes': ['Thingful.Connectors.GROWSensors'] })
 
 response = requests.post(url, headers=headers, data=payload)
 
-jResp = response.json()
+# parse json response if we can
+try:
+    jResp = response.json()
+except:
+    sys.exit("Unexpected Response. Status: {0}".format(response.status_code))
 
 # exit if status code is not ok
 if response.status_code != 200:
